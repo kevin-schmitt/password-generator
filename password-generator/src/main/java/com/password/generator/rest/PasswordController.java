@@ -1,4 +1,4 @@
-package com.password.generator.controller;
+package com.password.generator.rest;
 
 import java.util.ArrayList;
 
