@@ -5,4 +5,6 @@ REST API for generate random password
 EndPoints
 	- GET /passwords/length=?&number=?
 	
-	
+Contributing
+
+Please feel free to fork, comment, critique, or submit a pull request.
