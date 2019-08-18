@@ -10,6 +10,8 @@ public abstract class PasswordGeneratorAbstract implements PasswordGeneratorInte
 		protected int defaultSizePassword = 8;
 		
 		protected static final String LOWER_CASE = "abcdefghijklmnopqrstuvwxyz";
+		protected static final String UPPER_CASE = "ABCDEFGHIJKLMNOPRSTUVWXYZ";
+		
 		
 		protected Map<String, String> options = new HashMap();
 		private static final Random RANDOM = new Random();
@@ -25,7 +27,7 @@ public abstract class PasswordGeneratorAbstract implements PasswordGeneratorInte
 
 			ArrayList<String> tmp = new ArrayList<String>();
 			
-			for(int i = 0; i <= number; i++) {
+			for(int i = 0; i <= number - 1; i++) {
 				tmp.add(passwordGenerator());
 			}
 			

@@ -15,6 +15,7 @@ public class ComputerPasswordGenerator extends PasswordGeneratorAbstract {
 	 */
 	public ComputerPasswordGenerator() {
 		this.setOption("LOWER_CASE", PasswordGeneratorAbstract.LOWER_CASE);
+		this.setOption("UPPER_CASE", PasswordGeneratorAbstract.UPPER_CASE);
 	}
 	
 	public String getCharacterList() {
@@ -22,6 +23,9 @@ public class ComputerPasswordGenerator extends PasswordGeneratorAbstract {
 		
 		if(this.isOption("LOWER_CASE"))
 			password += PasswordGeneratorAbstract.LOWER_CASE;
+
+		if(this.isOption("UPPER_CASE"))
+			password += PasswordGeneratorAbstract.UPPER_CASE;
 		
 		return password;
 	}
